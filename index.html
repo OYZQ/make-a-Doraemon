@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./default.css">
+    <style id="styleTag"></style>
+    <title>画一个哆啦A梦</title>
+</head>
+
+<body>
+    <div class="code-wrapper">
+        <pre id="code">
+        </pre>
+    </div>
+    <div class="preview-wrapper">
+        <div class="preview">
+            <!-- 叮当猫整体 -->
+            <div class="doraemon">
+                <!-- 头部 -->
+                <div class="head">
+                    <!-- 眼睛 -->
+                    <div class="eyes">
+                        <!-- 左眼 -->
+                        <div class="eye left">
+                            <!-- 眼珠 -->
+                            <div class="black bleft"></div>
+                        </div>
+                        <!-- 右眼 -->
+                        <div class="eye right">
+                            <div class="black bright"></div>
+                        </div>
+                    </div>
+                    <!-- 脸部 -->
+                    <div class="face">
+                        <!-- 白色脸底 -->
+                        <div class="white"></div>
+                        <!-- 鼻子 -->
+                        <div class="nose">
+                            <div class="light"></div>
+                        </div>
+                        <!-- 鼻子的竖线 -->
+                        <div class="nose_line"></div>
+                        <!-- 嘴巴 -->
+                        <div class="mouse"></div>
+                        <!-- 胡须 -->
+                        <div class="whiskers">
+                            <div class="whisker rTop r160"></div>
+                            <div class="whisker rMiddle"></div>
+                            <div class="whisker rBottom r20"></div>
+                            <div class="whisker lTop r20"></div>
+                            <div class="whisker lMiddle"></div>
+                            <div class="whisker lBottom r160"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 脖子和叮当 -->
+                <div class="choker">
+                    <!-- 铃铛 -->
+                    <div class="bell">
+                        <div class="bell_line"></div>
+                        <div class="bell_circle"></div>
+                        <div class="bell_under"></div>
+                        <div class="bell_light"></div>
+                    </div>
+                </div>
+                <!-- 身体 -->
+                <div class="bodys">
+                    <!-- 肚子 -->
+                    <div class="body"></div>
+                    <!-- 肚兜 -->
+                    <div class="wraps"></div>
+                    <!-- 口袋 -->
+                    <div class="pocket"></div>
+                    <!-- 遮住一半口袋，使其呈现半圆形	 -->
+                    <div class="pocket_mask"></div>
+                </div>
+                <!-- 右手 -->
+                <div class="hand_right">
+                    <!-- 手臂 -->
+                    <div class="arm"></div>
+                    <!-- 手掌 -->
+                    <div class="circle"></div>
+                    <!-- 遮住手臂和身体交接处的线	 -->
+                    <div class="arm_rewrite"></div>
+                </div>
+                <!-- 左手 -->
+                <div class="hand_left">
+                    <div class="arm"></div>
+                    <div class="circle"></div>
+                    <div class="arm_rewrite"></div>
+                </div>
+                <!-- 脚 -->
+                <div class="foot">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="foot_rewrite"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <button data-speed="slow">慢 速</button>
+        <button data-speed="normal" class="active">中 速</button>
+        <button data-speed="fast">快 速</button>
+        <button onclick="document.getElementById('music').pause()">静 音</button>
+        <audio id="music" src="https://win-web-re01-sycdn.kuwo.cn/76d30f4db272d1de572787f94a49a767/5d0c6b48/resource/n1/59/60/1849170242.mp3"
+            autoplay="autoplay" loop="loop">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="./vender/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
