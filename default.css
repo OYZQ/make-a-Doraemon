@@ -12,18 +12,18 @@ body{
 }
 
 .doraemon {
-    margin: 50px 0 0 100px;
+    margin: 50px 0 0 0px;
     position: relative;
 }
 
 .code-wrapper{
-    flex: 4;
+    flex: 3;
     width: 50%;
     padding: 10px;
 }
 
 .preview-wrapper{
-    flex: 6;
+    flex: 7;
 }
 
 *::after {
