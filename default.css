@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+audio {
+    width: 100px !important;
+}
+
 body{
     display: flex;
     flex-direction: row;
